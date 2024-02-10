@@ -189,7 +189,7 @@ class SaidmanPoolGenerator:
             # Get their blood type tensor and append it to the list
             blood_type_tensor = self.get_blood_type_tensor(altruist.bloodTypeDonor)
             blood_type_altruists.append(blood_type_tensor)
-            blood_cpra.append(pair.patientCPRA)
+            blood_cpra.append(0)
   
         # Convert the blood type lists to tensors and reshape them
         blood_type_altruists = torch.tensor(blood_type_altruists)
